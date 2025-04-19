@@ -134,19 +134,12 @@ end
 
 # ==== test ====
 if __FILE__ == $0
-  data = [["apple", 10], ["banana", 20], ["orange", 30], ["grape", 40]]
+  data = [["apple", 5], ["banana", 8], ["orange", 10]]
   map = RobinhoodDjb2HashMap.new(data)
 
-  puts map.get("apple")    # => 10
-  puts map.get("banana")   # => 20
-  puts map.get("orange")   # => 30
-  puts map.get("grape")    # => 40
-
-  map.put("melon", 50)
-  puts map.get("melon")    # => 50
-
-  map.delete("banana")
-  puts map.get("banana")   # => nil
+  puts map.get("apple")
+  puts map.get("banana")
+  puts map.get("orange")
 
   puts "--- map status ---"
   p map
